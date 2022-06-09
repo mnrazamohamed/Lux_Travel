@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>travel website</title>
+    <title>Lux Travel</title>
 
     <!-- font awesome cdn link  -->
     <link
@@ -17,6 +17,9 @@
 
     <!-- custom js file link  -->
     <script src="js/script.js" defer></script>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="./images/favicon00.png" />
   </head>
   <body>
     <!-- header section starts  -->
@@ -62,8 +65,7 @@
     <!-- about section starts  -->
 
     <section class="about" id="about">
-     
-      <div class="content" data-aos="fade-left" data-aos-delay="600">
+      <div class="content">
         <span>why choose us?</span>
         <h3>Nature's Majesty Awaits You</h3>
         <p>
@@ -81,16 +83,13 @@
         </p>
       </div>
 
-      <div class="video-container" data-aos="fade-right" data-aos-delay="300">
-        <video
-          src="images/about-vid-1.mp4"
-          muted
-          autoplay
-          loop
-          class="video"></video>
-      </div>
-
-    
+      <video
+        src="images/about-vid-2.mp4"
+        muted
+        autoplay
+        loop
+        class="content"
+      ></video>
     </section>
 
     <!-- about section ends -->
@@ -104,34 +103,37 @@
       </div>
 
       <div class="box-container">
-        <div class="box" data-aos="zoom-in-up" data-aos-delay="150">
-          <i class="fas fa-globe"></i>
-          <h3>worldwide</h3>
-        </div>
+        <div class="col-lg-6" data-aos="fade-up">
+          <div class="box" data-aos="zoom-in-up" data-aos-delay="150">
+            <i class="fas fa-globe"></i>
+            <h3>worldwide</h3>
+          </div>
 
-        <div class="box" data-aos="zoom-in-up" data-aos-delay="300">
-          <i class="fas fa-hiking"></i>
-          <h3>adventures</h3>
-        </div>
+          <div class="box" data-aos="zoom-in-up" data-aos-delay="300">
+            <i class="fas fa-hiking"></i>
+            <h3>adventures</h3>
+          </div>
 
-        <div class="box" data-aos="zoom-in-up" data-aos-delay="450">
-          <i class="fas fa-utensils"></i>
-          <h3>food & drinks</h3>
+          <div class="box" data-aos="zoom-in-up" data-aos-delay="450">
+            <i class="fas fa-utensils"></i>
+            <h3>food & drinks</h3>
+          </div>
         </div>
+        <div class="col-lg-6" data-aos="fade-up">
+          <div class="box" data-aos="zoom-in-up" data-aos-delay="600">
+            <i class="fas fa-hotel"></i>
+            <h3>affordable hotels</h3>
+          </div>
 
-        <div class="box" data-aos="zoom-in-up" data-aos-delay="600">
-          <i class="fas fa-hotel"></i>
-          <h3>affordable hotels</h3>
-        </div>
+          <div class="box" data-aos="zoom-in-up" data-aos-delay="750">
+            <i class="fas fa-wallet"></i>
+            <h3>affordable price</h3>
+          </div>
 
-        <div class="box" data-aos="zoom-in-up" data-aos-delay="750">
-          <i class="fas fa-wallet"></i>
-          <h3>affordable price</h3>
-        </div>
-
-        <div class="box" data-aos="zoom-in-up" data-aos-delay="900">
-          <i class="fas fa-headset"></i>
-          <h3>24/7 support</h3>
+          <div class="box" data-aos="zoom-in-up" data-aos-delay="900">
+            <i class="fas fa-headset"></i>
+            <h3>24/7 support</h3>
+          </div>
         </div>
       </div>
     </section>
@@ -145,7 +147,112 @@
         <span>our gallery</span>
         <h1>we record memories</h1>
       </div>
+      <div class="container">
+        <div class="row">
+          <div class="gallery-filter">
+            <span class="filter-item active" data-filter="all">all</span>
+            <span class="filter-item" data-filter="iceland">Iceland</span>
+            <span class="filter-item" data-filter="brazil">Brazil</span>
+            <span class="filter-item" data-filter="alaska">Alaska</span>
+            <span class="filter-item" data-filter="greenland">Greenland</span>
+            <span class="filter-item" data-filter="maldives">Maldives</span>
+            <span class="filter-item" data-filter="thailand">Thailand</span>
+          </div>
+        </div>
 
+        <div class="row">
+          <div class="gallery-item iceland">
+            <div
+              class="gallery-item-inner"
+              data-aos="zoom-in-up"
+              data-aos-delay="150"
+            >
+              <img src="./images/img_iceland-01.jpg" alt="iceland" />
+            </div>
+          </div>
+
+          <div class="gallery-item iceland">
+            <div
+              class="gallery-item-inner"
+              data-aos="zoom-in-up"
+              data-aos-delay="150"
+            >
+              <img src="./images/img_iceland-02.jpg" alt="iceland" />
+            </div>
+          </div>
+
+          <div class="gallery-item brazil">
+            <div
+              class="gallery-item-inner"
+              data-aos="zoom-in-up"
+              data-aos-delay="150"
+            >
+              <img src="./images/img_brazil-01.jpg" alt="brazil" />
+            </div>
+          </div>
+
+          <div class="gallery-item brazil">
+            <div
+              class="gallery-item-inner"
+              data-aos="zoom-in-up"
+              data-aos-delay="150"
+            >
+              <img src="./images/img_brazil-02.jpg" alt="brazil" />
+            </div>
+          </div>
+
+          <div class="gallery-item bicycle">
+            <div
+              class="gallery-item-inner"
+              data-aos="zoom-in-up"
+              data-aos-delay="150"
+            >
+              <img src="./images/gallery-img-8.jpg" alt="bicycle02" />
+            </div>
+          </div>
+
+          <div class="gallery-item bike">
+            <div
+              class="gallery-item-inner"
+              data-aos="zoom-in-up"
+              data-aos-delay="150"
+            >
+              <img src="./images/gallery-img-6.jpg" alt="bike03" />
+            </div>
+          </div>
+
+          <div class="gallery-item bicycle">
+            <div
+              class="gallery-item-inner"
+              data-aos="zoom-in-up"
+              data-aos-delay="150"
+            >
+              <img src="./images/gallery-img-7.jpg" alt="bicycle01" />
+            </div>
+          </div>
+
+          <div class="gallery-item car">
+            <div
+              class="gallery-item-inner"
+              data-aos="zoom-in-up"
+              data-aos-delay="150"
+            >
+              <img src="./images/gallery-img-8.jpg" alt="car03" />
+            </div>
+          </div>
+
+          <div class="gallery-item bicycle">
+            <div
+              class="gallery-item-inner"
+              data-aos="zoom-in-up"
+              data-aos-delay="150"
+            >
+              <img src="./images/gallery-img-9.jpg" alt="bicycle03" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 
       <div class="box-container">
         <div class="box" data-aos="zoom-in-up" data-aos-delay="150">
           <img src="images/gallery-img-1.jpg" alt="" />
@@ -199,8 +306,9 @@
           <img src="images/gallery-img-9.jpg" alt="" />
           <span>travel spot</span>
           <h3>maldive</h3>
-        </div>
+        </div> 
       </div>
+  -->
     </section>
 
     <!-- gallery section ends -->
@@ -212,7 +320,6 @@
         <span>start your adventures</span>
         <h3>Let's Explore This World</h3>
         <p>Explore, Experiment And Evolve Your Beautiful World.</p>
-        <a href="#book-form" class="btn">book now</a>
       </div>
     </div>
 

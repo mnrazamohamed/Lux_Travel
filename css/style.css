@@ -206,25 +206,6 @@ section {
   width: 100%;
 }
 
-.about .video-container .controls {
-  text-align: center;
-  padding: 2rem 0;
-}
-
-.about .video-container .controls span {
-  display: inline-block;
-  height: 2rem;
-  width: 2rem;
-  border-radius: 50%;
-  background: #fff;
-  cursor: pointer;
-  margin: 0.7rem;
-}
-
-.about .video-container .controls span:hover {
-  background: #5851bd;
-}
-
 .about .content {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 42rem;
@@ -324,6 +305,7 @@ section {
   background: #222;
   border-radius: 1rem;
   padding: 3rem;
+  justify-content: center;
   text-align: center;
   border: 0.2rem solid #111;
 }
@@ -739,3 +721,104 @@ section {
   }
 }
 /*# sourceMappingURL=style.css.map */
+
+/* Image Gallery */
+body {
+  line-height: 1.5;
+  font-family: sans-serif;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.gallery {
+  width: 100%;
+  display: block;
+  min-height: 100vh;
+  padding: 100px 0;
+}
+.gallery .gallery-filter {
+  padding: 0 15px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.gallery .gallery-filter .filter-item {
+  color: #ffffff;
+  font-size: 17px;
+  border: 2px solid white;
+  text-transform: uppercase;
+  display: inline-block;
+  border-radius: 20px;
+  margin-right: 8px;
+  cursor: pointer;
+  padding: 8px 20px 8px 20px;
+  line-height: 1.2;
+  transition: all 0.3s ease;
+}
+
+.filter-item:hover {
+  background-color: #3d388686;
+}
+.gallery .gallery-filter .filter-item.active {
+  color: white;
+  border-color: #5851bd;
+  background: #5851bd;
+}
+.gallery .gallery-item {
+  width: calc(100% / 3);
+  padding: 15px;
+}
+.gallery-item:hover {
+  zoom: 0.5;
+  padding: 0px 0px;
+  height: 32rem;
+}
+
+.gallery .gallery-item-inner img {
+  width: 100%;
+  border: 3px solid #bac8e6;
+  border-radius: 5px;
+}
+.gallery .gallery-item.show {
+  animation: fadeIn 0.5s ease;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.gallery .gallery-item.hide {
+  display: none;
+}
+
+/*responsive*/
+@media (max-width: 491px) {
+  .gallery .gallery-item {
+    width: 50%;
+  }
+}
+@media (max-width: 467px) {
+  .gallery .gallery-item {
+    width: 100%;
+  }
+  .gallery .gallery-filter .filter-item {
+    margin-bottom: 10px;
+  }
+}
